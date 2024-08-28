@@ -154,19 +154,17 @@ main {
 
 /* estilos del footer */
 .footer__link {
-  color:#fff;
+  color: #fff;
   display: flex;
   justify-content: center;
-  margin-top:10px;
+  margin-top: 10px;
   text-decoration: none;
-  transition-duration: 0.3s ;
+  transition-duration: 0.3s;
 }
 
-.footer__link:hover{
-  color:rgb(185, 185, 185);
-
+.footer__link:hover {
+  color: rgb(185, 185, 185);
 }
-
 
 /* Media queries */
 
@@ -186,6 +184,11 @@ main {
   }
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
+}
 @media screen and (max-width: 992px) {
   .w-50 {
     width: 75% !important;
