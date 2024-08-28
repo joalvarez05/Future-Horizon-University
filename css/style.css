@@ -186,9 +186,10 @@ main {
 
 @media screen and (max-width: 768px) {
   body {
-    background-size: cover;
+    background-size: contain;
   }
 }
+
 @media screen and (max-width: 992px) {
   .w-50 {
     width: 75% !important;
