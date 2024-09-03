@@ -85,39 +85,32 @@
 
     <main>
       <section>
-        <article class="entry d-flex flex-column align-items-center">
-          <h1 class="display-4 mt-5 fw-semibold text-light text-center">
+        <article
+          class="entry d-flex flex-column align-items-center position-relative"
+        >
+          <img
+            src="./assets/banner-index.jpg"
+            alt="college"
+            class="img__welcome"
+          />
+          <h1 class="display-4 mt-5 fw-semibold text-light text-center z-3">
             Welcome to
-            <span class="d-block text-success-emphasis"
-              >Horizon University</span
-            >
+            <div id="sopa">
+              <span class="d-block" id="sopa">Horizon University</span>
+            </div>
           </h1>
-          <p class="text-center fw-medium w-50 mt-2 fs-5">
+          <p class="text-center fw-medium w-50 mt-2 fs-5 z-3">
             Where world-class faculty, innovative research, and dynamic students
             come together to advance education and foster change in the world.
           </p>
         </article>
       </section>
-      <section>
-        <article class="position-relative">
-          <video
-            src="./assets/banner-video.mp4"
-            class="my-4 banner__video border border-secondary"
-            loop
-            autoplay
-            controls
-          ></video>
-          <span class="video__title">Horizon University</span>
-        </article>
-      </section>
+
       <section>
         <article>
           <div>
-            <div
-              id="carouselNews"
-              class="carousel slide border border-secondary"
-            >
-              <div class="carousel-inner rounded-2">
+            <div id="carouselNews" class="carousel slide">
+              <div class="carousel-inner">
                 <div class="carousel-item active">
                   <a href="#">
                     <div>
@@ -198,6 +191,17 @@
               </button>
             </div>
           </div>
+        </article>
+      </section>
+      <section>
+        <article class="position-relative">
+          <video
+            src="./assets/banner-video.mp4"
+            class="banner__video"
+            loop
+            autoplay
+            controls
+          ></video>
         </article>
       </section>
       <section>
@@ -282,7 +286,7 @@
       </section>
     </main>
     <footer>
-      <section class="container-fluid row">
+      <section class="container-fluid row alineado">
         <article class="col-12 col-sm-12 col-md-3 col-lg-3 text-center">
           <a href="./index.html">
             <img
@@ -291,11 +295,11 @@
               alt="#"
           /></a>
         </article>
-        <article class="col-12 col-sm-12 col-md-3 col-lg-3">
-          <p class="h5 fw-bold text-center">Future Horizon University</p>
-          <p class="h6 text-center">
-            Ficticius Ave. 333 Tucumán, Argentina. 4107
-          </p>
+        <article
+          class="col-12 col-sm-12 col-md-3 col-lg-3 d-flex flex-column justify-content-center"
+        >
+          <p class="h5 fw-bold text-center">Ficticius City, Argentina.</p>
+          <p class="h6 text-center">Ficticius Ave. 333 Tucumán. T4107</p>
         </article>
         <article class="col-12 col-sm-12 col-md-3 col-lg-3 d-flex flex-column">
           <h5 class="text-center">The University</h5>
@@ -306,6 +310,7 @@
           <a href="#" class="footer__link">Jobs</a>
         </article>
         <article class="col-12 col-sm-12 col-md-3 col-lg-3 d-flex flex-column">
+          <h5 class="text-center">The University</h5>
           <a href="#" class="footer__link"> Accessibility statement </a>
           <a href="#" class="footer__link"> Privacy policy and cookies </a>
           <a href="#" class="footer__link">Freedom of information</a>
@@ -346,13 +351,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var videoTitle = document.querySelector(".video__title");
-        setTimeout(function () {
-          videoTitle.style.opacity = "0";
-        }, 5000);
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
